@@ -1,0 +1,234 @@
+
+body {
+    background-color: #ffffff;
+    margin-top: 90px;  
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.navbar-custom {
+    background-color: rgb(251, 66, 66);
+    height: 80px;
+}
+
+.navbar-brand img {
+    width: 50px;
+}
+
+.form-control {
+    width: 300px;
+    margin-right: 20px;
+}
+
+
+#btn-water {
+    background-color: #b2f2fb;
+    border-color:#b2f2fb;
+    color: black;
+}
+
+#btn-tierra {
+    background-color: #b8f9b3;
+    border-color:  #b8f9b3;
+    color: black;
+}
+#btn-fuego {
+    background-color: #fbc1c1;
+    border-color: #fbc1c1;
+    color: black;
+}
+#btn-poison {
+    background-color:#ccccff ;
+    border-color: #ccccff ;
+    color: black;
+}
+#btn-electric {
+    background-color:#ffffcc ;
+    border-color: #ffffcc ;
+    color: black;
+}
+#btn-fairy {
+    background-color:#ff99cc;
+    border-color: #ff99cc;
+    color: black;
+}
+#btn-psychic {
+    background-color: #CFCFC4;
+    border-color: #CFCFC4;
+    color: black;
+}
+#btn-rock {
+    background-color: #ababab;
+    border-color: #ababab;
+    color: black;
+}
+#btn-flying {
+    background-color: 	#99ccff;
+    border-color: 	#99ccff;
+    color: black;
+}
+#btn-bug {
+    background-color: #b8f9b3;
+    border-color: #b8f9b3;
+    color: black;
+}
+
+.card-horizontal {
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+.card-img {
+    width: 200px;
+    height: auto;
+}
+
+.card-body {
+    flex: 1;
+}
+
+.bg-orange {
+    background-color: #fbc1c1;
+}
+.bg-green{
+    background-color: #b8f9b3;
+}
+.bg-blue{
+    background-color:#b2f2fb ;
+}
+.bg-purple{
+    background-color:#ccccff ;
+}
+.bg-extra{
+    background-color:#ccffff ;
+}
+.bg-yellow{
+    background-color:#ffffcc ;
+}
+.bg-normal{
+    background-color:#ffcccc;
+}
+.bg-fairy{
+    background-color:#ff99cc;
+}
+.bg-fight{
+    background-color: #b5a28f;
+}
+.bg-psychic{
+    background-color: #CFCFC4;
+}
+.bg-rock{
+    background-color: #ababab;
+}
+.card-details {
+    font-size: 14px;
+    margin-top: 10px;
+    color: #6c757d;
+}
+
+/* Estilos para el modal */
+#pokemonModal {
+    font-family: Arial, sans-serif;
+}
+
+
+
+#pokemonModal .modal-content {
+    background-color: #f8f9fa;
+    color: #212529;
+    border-radius: 10px;
+}
+
+#pokemonModal .modal-header {
+    background-color: #0d00ff;
+    color: #fff;
+    border-radius: 10px 10px 0 0;
+}
+
+#pokemonModal .modal-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+#pokemonModal .modal-body {
+    padding: 20px;
+}
+
+#pokemonModal .modal-footer {
+    background-color: #ff00e1;
+    border-radius: 0 0 10px 10px;
+}
+
+#pokemonModal .btn-close {
+    color: #fff;
+}
+
+#pokemonModal .btn-primary {
+    background-color: #007bff;
+    color: #fff;
+    border-radius: 5px;
+    padding: 5px 10px;
+}
+
+#pokemonModal .btn-primary:hover {
+    background-color: #b30054;
+}
+/* Estilos para el modal */
+#pokemonModal .modal-dialog {
+    max-width: 1000px; /* Ancho máximo del modal */
+    margin: 1.75rem auto; /* Margen en la parte superior e inferior para centrar el modal */
+}
+
+#pokemonModal .modal-content {
+    border-radius: 15px; /* Bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+/* Estilos para la lista de movimientos en el modal */
+#movesList {
+    column-count: 2; /* Dividir la lista en dos columnas */
+    column-gap: 20px; /* Espacio entre las columnas */
+}
+
+/* Estilos para cada movimiento */
+.move-item {
+    margin-bottom: 5px; /* Espacio entre los elementos de la lista */
+}
+/* Estilos CSS para el modal */
+.modal-content {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.modal-dialog {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.modal.fade .modal-dialog {
+    transition: transform 0.3s ease-out;
+}
+
+/* Estilos para el botón de cierre */
+.close-modal {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    color: #000;
+    font-size: 20px;
+}
+
+/* Estilo para la animación de entrada */
+.modal.fade.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+#pokemonModal .modal-content {
+    margin-top: 40px; /* Ajusta este valor según sea necesario */
+}

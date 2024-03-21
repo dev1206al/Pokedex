@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <!--Metadatos-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokedex</title>
+
+    <!--Estilos-->
+<link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="./img/favicon.ico" type="image/x-icon">
+
+   
+</head>
+<body>
+    <!--Barra de navegacion-->
+    <nav class="navbar navbar-expand-lg navbar-light navbar-custom fixed-top">
+        <div class="container-fluid">
+            <!--Logo-->
+            <a class="navbar-brand" href="./index.html"><img src="./img/pokeball2.png" alt="Logo"></a>
+            <!--Formulario de busqueda-->
+            <form class="d-flex">
+                <input class="form-control me-2" type="search" placeholder="Encuentra tu Pokemón!" aria-label="Buscar" id="searchInput" oninput="searchPokemon()">
+
+            </form>
+            <!--Botones de tipo de Pokemon-->
+            <div class="d-flex">
+                <button class="btn btn-primary me-2" id="btn-water" onclick="searchByType('water')" data-type="water">Agua</button>
+                <button class="btn btn-primary me-2" id="btn-tierra" onclick="searchByType('ground')" data-type="ground">Tierra</button>
+                <button class="btn btn-primary me-2" id="btn-fuego" onclick="searchByType('fire')" data-type="fire">Fuego</button>
+                <button class="btn btn-primary me-2" id="btn-poison" onclick="searchByType('poison')" data-type="poison">Veneno</button>
+                <button class="btn btn-primary me-2" id="btn-electric" onclick="searchByType('electric')" data-type="electric">Eléctrico</button>
+                <button class="btn btn-primary me-2" id="btn-fairy" onclick="searchByType('fairy')" data-type="fairy">Hada</button>
+                <button class="btn btn-primary me-2" id="btn-psychic" onclick="searchByType('psychic')" data-type="psychic">Psíquico</button>
+                <button class="btn btn-primary me-2" id="btn-rock" onclick="searchByType('rock')" data-type="rock">Roca</button>
+                <button class="btn btn-primary me-2" id="btn-flying" onclick="searchByType('flying')" data-type="flying">Volador</button>
+                <button class="btn btn-primary " id="btn-bug" onclick="searchByType('bug')" data-type="bug">Bicho</button>
+
+            </div>
+
+            
+        </div>
+    </nav>
+<!--Musica de fondo-->
+    <audio id="backgroundMusic" autoplay loop>
+        <source src="./music/fondo.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+    
+<!--Contenedor de pokemon-->
+    <div class="container mt-5">
+        <div class="row" id="pokemonContainer"></div>
+    </div>
+    <!--Modal de detalles del Pokemon-->
+    <div class="modal fade" id="pokemonModal" tabindex="-1" aria-labelledby="pokemonModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="pokemonModalLabel">Información del Pokémon</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <!--Detalles del Pokemon-->
+                    <div id="pokemonDetails"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!--Scripts-->
+    <script src="./script.js"></script>
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+    
+</body>
+</html>
